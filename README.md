@@ -1,15 +1,15 @@
 # Udacity Full Stack Nanodegree - Log-Analysis Project
 
-## Project Overview
+### Project Overview
 
 For this project, we're working with the scenario that we've been hired onto a team working on a newspaper site. I've been asked to build an internal reporting tool that will use information from the database to discover what kind of articles the site's readers like, and other statistics.
 
-## How to Run?
+### How to Run?
 
 #### Required Software:
 * [Python3](https://www.python.org)
 
-### Setup the database:
+#### Setup the database:
 1. Download the [mock database file](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
 2. Unzip the file, which contains newsdata.sql.
 3. Place the file in your desired directory.
