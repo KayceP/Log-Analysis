@@ -1,4 +1,4 @@
-#  <img src="https://cdn.worldvectorlogo.com/logos/udacity.svg" alt="Udacity Logo" width=40" height="40"> Udacity Full Stack Nanodegree - Log-Analysis Project
+# Udacity Full Stack Nanodegree - Log-Analysis Project
 
 ## Project Overview
 
