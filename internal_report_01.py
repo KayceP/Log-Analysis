@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 # Import needed modules.
 import psycopg2
 import sys
