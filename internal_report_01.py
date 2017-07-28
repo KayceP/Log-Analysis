@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-# Import needed modules.
+
 import psycopg2
-import sys
 
 # Define queries. Define title, then query data.
 
@@ -59,7 +58,9 @@ def get_query_results(query):
 def print_query_results(query_results):
     print (query_results[1])
     for index, results in enumerate(query_results[0]):
-        print (index+1, results[0], str(results[1]) + " views")
+        print (
+            "\t", index+1, "-", results[0],
+            "\t - ", str(results[1]), "views")
 
     # Print errors, if any arise.
 
@@ -67,7 +68,7 @@ def print_query_results(query_results):
 def print_error_results(query_results):
     print (query_results[1])
     for results in query_results[0]:
-        print (results[0], str(results[1]) + "% errors")
+        print ("\t", results[0], "-", str(results[1]) + "% errors")
 
 
 if __name__ == '__main__':
@@ -80,9 +81,3 @@ if __name__ == '__main__':
     print_query_results(pop_art_res)
     print_query_results(pop_auth_res)
     print_error_results(load_errors)
-
-    print "Results are being exported to a text file."
-
-    records = [(pop_art_res), (pop_auth_res), (load_errors)]
-    sys.stdout = open("Internal_Report_01.txt", "w")
-    print (records)
